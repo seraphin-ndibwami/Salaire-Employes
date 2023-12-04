@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employés</title>
+</head>
+<body>
+    <form action="" id="EmployeSalaire" method="post">
+        <input type="text" name="nomEmploye" placeholder = "nom" id="nomEmploye" required>
+        <input type="number" name="salaire" placeholder="salaire" id="salaire" required>
+        <button type="submit">sauvegarder</button>
+    </form>
+    <div class="filtre">
+        <button id="filtre">Filtrer</button>
+        <div class="TOusemployes">
+            <div class="employes">
+                <p>Tous les emploés</p>
+            </div>
+            <div class="employesFiltres"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

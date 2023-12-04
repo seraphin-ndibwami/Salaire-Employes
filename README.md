@@ -31,30 +31,34 @@ git add README.md
 
 #### 5. on enregistre le modification faite avec la commade
 ```bash
-git commmit -m "itialisation du repertoire git"
+git commit -m "itialisation du repertoire git"
 ```
 
 #### 6. on renome notre branche master locale par defaut en main avec la commande
 ```bash
 git branch -M main
 ```
+#### 7. on lie notre repertoire locale au repertoire distant
+```bash
+git remote add origin https://github.com/seraphin-ndibwami/Salaire-Employes.git
+```
 
-#### 7. on envoi nos moficication sur le repertoire distant
+#### 8. on envoi nos moficication sur le repertoire distant
 ```bash
 git push -u origin main
 ```
-#### 8. on on créer une autre branch que nous appelons devellopement
+#### 9. on on créer une autre branch que nous appelons devellopement
 
 ```bash
 git branch devellopement
 ```
 c'est sur cette branche qu'on sera entrain de faire notre devellopement et quand on se rassure qu'une fonctionnalite fonctionne on va la fusionne avec la brabche principale
 
-#### 9. on se deplace sur cette branch
+#### 10. on se deplace sur cette branch
 ```bash
 git checkout devellopement
 ```
-#### 9.1. on creer un fichier .gitignore
+#### 10.1. on creer un fichier .gitignore
 ```python
 """seulement pour notre dernier projet car on a utliser composer pour initialiser le projet"""
 
@@ -64,31 +68,28 @@ git checkout devellopement
 # Fichiers de verrouillage de Composer
 composer.lock
 ```
-#### 10. ajouter tout le projet a la zone de staging avec la commande
-```bash
-git add .
-```#### 10. ajouter tout le projet a la zone de staging avec la commande
+#### 11. ajouter tout le projet a la zone de staging avec la commande
 ```bash
 git add .
 ```
-#### 10. on versionne nos modifications avec la commande
+#### 12. on versionne nos modifications avec la commande
 ```bash
-git commmit -m "mise en place du projet sur la branche develloppement
+git commit -m "mise en place du projet sur la branche develloppement"
 ```
-#### 11. on pousse les modifications sur le repertoire distant
+#### 13. on pousse les modifications sur le repertoire distant
 ```bash
 git push origin develloppement
 ```
-#### 11. on passe au repertoire principale
+#### 14. on passe au repertoire principale
 ```bash
 git checkout main
 ```
-#### 11. on fusionne la brach devellopement a la branch main
+#### 15. on fusionne la brach devellopement a la branch main
 comme on se fait confiance, on peut directement fusionner nos branches sans passe par une demanche de tirrage(pull request)
 ```bash
 git merge devellopement
 ```
-#### 12. on met a jour le repertoire distant
+#### 16. on met a jour le repertoire distant
 
 ```bash
 git push
